@@ -1,0 +1,105 @@
+\documentclass{beamer}
+\usepackage[T2A]{fontenc}
+\usepackage[russiun]{babel}
+\usepackage{mathtools}
+\usepackage{sidecap}
+\usepackage{subcaption}
+\usepackage{cite}
+
+\usecolortheme{wolverine}
+
+\title{ Introduction to LaTeX презентация}
+\author{Климчук Антонина}
+
+\begin{document}% начало презентации
+
+\setbeamercolor{itemize item}{fg=black}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamercolor{alerted text}{fg=black}
+\setbeamertemplate{itemize items}{\textbullet}
+\setbeamerfont*{itemize/enumerate subbody}{parent=itemize/enumerate body}
+\setbeamerfont*{itemize/enumerate subsubbody}{parent=itemize/enumerate subbody}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+
+
+\begin{frame}% первый слайд
+\titlepage
+\end{frame}
+
+
+
+\begin{frame}
+    \begin{itemize}
+        \item<1-> Однажды, в студеную зимнюю пору
+        \item<2-> Я из лесу вышел; был сильный мороз.
+        \item<3-> Гляжу, поднимается медленно в гору
+        \item<4-> Лошадка, везущая хворосту воз.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Пробуем картинку и список} 
+        \begin{columns}[T,onlytextwidth]
+                \begin{column}{0.44\textwidth}
+                        \begin{itemize}
+                                \item \alert{И шествуя важно}
+                                \item Лошадку ведет под уздцы мужичок --- \emph{Спанч Боб}
+                                \item В больших сапогах
+                                \item в полушубке овчинном
+                                \item В больших рукавицах… а \alert{сам с ноготок!}
+                        \end{itemize}
+                \end{column}
+                \begin{column}{0.56\textwidth}
+                        \includegraphics[width=\textwidth]{spanch_bob.jpeg}
+                \end{column}
+        \end{columns}
+\end{frame}
+
+\begin{frame}{Пробуем цвета}
+        \begin{block}{Remark:}
+        «Здорово парнище!» — «Ступай себе мимо!»
+        \end{block}
+
+        \begin{alertblock}{Important theorem:}
+        — «Уж больно ты грозен, как я погляжу!
+        \end{alertblock}
+
+        \begin{examples}
+       Откуда дровишки?» — «Из лесу, вестимо;
+        \end{examples}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Текст в две колонки и вложенный список}
+    \begin{columns}
+    \column{0.5\textwidth}
+    
+
+    \(y' = {\left({\arctan^{3} {2x} \cdot \cos{8x} }\right)'} \)
+
+    \begin{enumerate} % nested
+        \item Отец
+        \begin{enumerate}
+            \item  слышишь
+            \begin{enumerate}
+                \item рубит
+       			\item а я отвожу
+                    \item В лесу раздавался
+            \end{enumerate}
+            \item  топор дровосека
+        \end{enumerate}
+        
+    \end{enumerate}
+    
+    \column{0.5\textwidth}
+    «А что, у отца-то большая семья?»
+    
+    — «Семья-то большая, да два человека
+    
+    Всего мужиков-то: отец мой да я»
+    
+    \end{columns}
+\end{frame}
+
+
+\end{document}
